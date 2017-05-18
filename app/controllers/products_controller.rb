@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
        current_cart.add_product_to_cart(@product)
        flash[:notice]="Success #{@product.title}to add to the cart"
     else
-       flash[:warning]="You'd already had it in the cart."
+       flash[:warning]="You'd already put it in the cart."
     end
     redirect_to :back
   end
